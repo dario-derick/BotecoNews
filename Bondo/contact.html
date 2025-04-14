@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="Assets/favicon.jpg">
+  <meta name="keywords" content="Boteco News, Boteco College news, campus news, student news, college events, photo gallery, college updates, student stories">
+  <title>Contact | Boteco News</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Fonts and Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h1, h3, h4 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+}
+
+.logo span {
+  color: #f1c40f;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-wrapper ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  font-family: var(--font);
+}
+
+.nav-wrapper ul li a::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--info);
+  bottom: -6px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-wrapper ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-wrapper ul li a:hover {
+  color: var(--info);
+}
+.fa-close, .fa-bars{
+  display: none;
+}
+
+/* Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.contact-handles, .social-media, .form {
+  padding: 1rem;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+/* Form Styling */
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+form button {
+  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer h3, footer h5 {
+  color: #f1c40f;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content a {
+  color: #ecf0f1;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Toggle Nav */
+@media  (max-width:600px) {
+  .logo{
+      font-size: 20px;
+      float: left;
+      margin-left: -20px;
+    }
+    .fa-close, .fa-bars{
+      display: block;
+      
+    }
+
+    .fa-bars, .fa-close {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+    
+    .fa-close {
+     
+      top: 1.5rem;
+      right: 1.5rem;
+      float: right;
+      padding: 20px 20px;
+    }
+    
+    .fa-bars:hover, .fa-close:hover {
+      color: var(--info);
+    }
+    .nav-wrapper{
+      right: -100px;
+      width: 100%;
+      background-color: #ffffffcc;
+      height: 100vh;
+      transform: all .9s ease-in;
+      background-color: #e6e3e359;
+      display: none;
+    }
+    .nav-wrapper ul{
+      display: block;
+      margin: 25px;
+    }
+    .nav-wrapper ul li{
+      margin: 1.5rem;
+      padding: 10px;
+      
+    }
+    
+}
+@media (min-width: 768px) {
+  .nav-wrapper {
+    position: static;
+    height: auto;
+    background: transparent;
+    display: flex;
+    gap: 1rem;
+    right: 0 !important;
+  }
+
+  .nav-wrapper ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .fa-bars, .fa-close {
+    display: none;
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="Styles/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h3>Boteco <span>News</span> Center</h3>
+    </div>
+    <nav class="nav-wrapper">
+      <i class="fa fa-close" onclick="closeMenu()" aria-hidden="true"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+  </header>
+
+  <main>
+    <h1>Contact Us Today</h1>
+    <div class="container">
+      <div class="contact-handles">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@boteconews.com">info@boteconews.com</a></p>
+        <p>Phone: +254 712 345 678</p>
+        <p>Location: College Campus, ICT Department</p>
+      </div>
+
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook-official"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form">
+        <form id="myform" class="Fcontact">
+          <h4>Send Us a Message</h4>
+          <div>
+            <input type="text" id="Name" placeholder="Your Name" required />
+          </div>
+          <div>
+            <input type="text" id="Phone" placeholder="Phone Number" required />
+          </div>
+          <div>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="quick-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@boteconews.com">info@boteconews.com</a></p>
+        <p>Phone: +254 712 345 678</p>
+        <p>Location: College Campus, ICT Department</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container-footer">
+        <p>&copy; 2025 Boteco News. All rights reserved.</p>
+        <p>Powered by <a href="https://www.tassolutions.co.ke" target="_blank">TAS Solutions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="Script/main.js"></script>
+</body>
+</html>
