@@ -1,6 +1,6 @@
 # BotecoNews 🗞️🍻
 
-[![Vercel Deployment](https://vercel.com/button)](https://boteconews.vercel.app)
+(https://boteco-news-center.vercel.app)
 
 A college news blog focusing on communicating info to students.
 
