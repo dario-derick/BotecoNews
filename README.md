@@ -1,45 +1,42 @@
-# BotecoNews 🗞️🍻
+# Boteco News
 
-(https://boteco-news-center.vercel.app)
+*Boteco News* is a responsive, modern college news website built using HTML, CSS, and JavaScript. It features a homepage with top stories, a photo gallery and a functional contact form.
 
-A college news blog focusing on communicating info to students.
+## 🚀 Features
 
-## Features ✨
+- 📰 News articles with categories
+- 📸 Image gallery
 
-- Clean, responsive design
-- Dynamic content loading
-- Social sharing capabilities
-- FontAwesome icon integration
-- Google Fonts typography
-- Cross-browser compatibility
+- 📧 Contact form
+- 📱 Fully responsive design
+- 🔝 Scroll to Top button
+- 🔗 Social media integration
 
-## Built With 🛠️
+## 🛠️ Technologies Used
 
-- **Core Technologies**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: CSS Grid/Flexbox, Media Queries
-- **Icons**: [Font Awesome](https://fontawesome.com)
-- **Fonts**: [Google Fonts](https://fonts.google.com)
-- **Hosting**: Vercel
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Font Awesome
+-animation library(Aos)
+## 📁 Project Structure
+Bondo
+    Asssets
+        images
+    Styles
+        style.css
+    index.html
+    blog.html
+    blogTrend.html
+    contact.html
+    read.md
 
-## Live Demo 🌐
+For contributions or feedback:
 
-Check out the live version:  
-[https://boteconews.vercel.app](https://boteconews.vercel.app)
+Author: Derick Omondi
+*Email:* Omondiderick31@gmail.com
+*GitHub:*https://github.com/dario-derick
 
-## Installation 💻
-
-1. Clone the repository:
-```bash
-git clone https://github.com/dario-derick/BotecoNews.git
-cd BotecoNews
-
-BotecoNews/
-├── assets/
-│   ├── styles/
-│   │   └── style.css
-│   ├── scripts/
-│   │   └── main.js
-│   └── images/
-├── index.html
-├── LICENSE
-└── README.md
+///
+*Boteco News* – Inspiring, Informing, Empowering.
